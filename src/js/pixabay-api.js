@@ -1,6 +1,6 @@
 export const searchImage = search => {
   const searchParams = new URLSearchParams({
-    key: '47413249-26b6bb6c19545a0151716ae7a',
+    key: '47161865-40d939b38272e547a09e56cd8',
     q: search,
     image_type: 'photo',
     orientation: 'horizontal',
