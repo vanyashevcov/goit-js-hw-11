@@ -11,7 +11,7 @@ const form = document.querySelector('.form');
 const gallery = document.querySelector('ul.gallery');
 const loader = document.querySelector('.loader');
 
-let lightbox = new SimpleLightbox('.galery a', {
+let lightbox = new SimpleLightbox('.gallery a', {
   captionsData: 'alt',
   captionDelay: 250,
 });
@@ -43,7 +43,6 @@ const createGalary = e => {
   searchImage(searchText)
     .then(({ hits }) => {
       gallery.innerHTML = '';
-     
 
       const images = renderImages(hits);
       if (images) {
@@ -69,7 +68,7 @@ const createGalary = e => {
     })
     .catch(error => {
       console.log(error);
-      
+
       gallery.innerHTML = '';
       iziToast.error({
         iconUrl: errorIcon,
