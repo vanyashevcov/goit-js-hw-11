@@ -67,6 +67,7 @@ const createGalary = e => {
       form.reset();
     })
     .catch(error => {
+      loader.style.display = 'none';
       console.log(error);
 
       gallery.innerHTML = '';
